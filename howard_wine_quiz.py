@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#LoLynne // 03/25/2026
 """
 Howard Street Wine Merchant — Wine Discovery Quiz
 Guides customers from region preferences → taste profile → personalized recommendations.
@@ -9,12 +10,10 @@ import textwrap
 import random
 
 # ─────────────────────────────────────────────
+
 #  WINE INVENTORY
 #  Add / edit wines here to match real stock.
-#  Each entry: name, winery, region, country,
-#  world, wine_type, body, sweetness, tannins,
-#  acidity, flavors[], price, sku, description,
-#  adventurous (bool — marks "wild card" picks)
+
 # ─────────────────────────────────────────────
 INVENTORY = [
     # ── FRANCE ────────────────────────────────
@@ -326,8 +325,11 @@ INVENTORY = [
 
 
 # ─────────────────────────────────────────────
+
 #  TERMINAL COLORS  (no dependencies needed)
+
 # ─────────────────────────────────────────────
+
 class C:
     RESET  = "\033[0m"
     BOLD   = "\033[1m"
@@ -361,7 +363,9 @@ def wrap(text, width=58, indent=4):
 
 
 # ─────────────────────────────────────────────
+
 #  QUIZ HELPERS
+
 # ─────────────────────────────────────────────
 def ask(question, options, allow_skip=False):
     """
@@ -442,7 +446,9 @@ def display_recommendation(wine, rank=None, label=None, emoji="🍾"):
 
 
 # ─────────────────────────────────────────────
+
 #  QUIZ FLOW
+
 # ─────────────────────────────────────────────
 def run_quiz():
     prefs = {}
@@ -622,7 +628,9 @@ def run_quiz():
 
 
 # ─────────────────────────────────────────────
+
 #  ENTRY POINT
+
 # ─────────────────────────────────────────────
 if __name__ == "__main__":
     try:
